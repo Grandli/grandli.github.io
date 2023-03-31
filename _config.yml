@@ -79,8 +79,8 @@ meta_generator: true
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
 #date_format: YYYY-MM-DD
-date: "May 1, 2022"
-time_format: HH:mm:ss
+date: "{{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}"
+#time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
 
